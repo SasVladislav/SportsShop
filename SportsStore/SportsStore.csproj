@@ -217,6 +217,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\StoreIdentityDbContext.cs" />
+    <Compile Include="Infrastructure\StoreIdentityDbInitializer.cs" />
+    <Compile Include="Infrastructure\StoreRole.cs" />
+    <Compile Include="Infrastructure\StoreRoleManager.cs" />
+    <Compile Include="Infrastructure\StoreUser.cs" />
+    <Compile Include="Infrastructure\StoreUserManager.cs" />
     <Compile Include="Models\IRepository.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
