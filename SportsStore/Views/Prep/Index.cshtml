@@ -1,5 +1,13 @@
 ﻿@model IEnumerable<SportsStore.Models.Product>
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel panel-primary">
+    @Html.ActionLink("Sign In","singin","prep",null,new {@class="btn btn-primary" })
+    @Html.ActionLink("Sign Out", "singout", "prep", null, new { @class = "btn btn-primary" })
+    User: @(HttpContext.Current.User.Identity.Name)
+</div>
 <div class="panel panel-primary">
     <div class="panel-heading">Products</div>
     <table class="table table-striped">

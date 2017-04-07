@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
-namespace SportsStore.Infrastructure
+namespace SportsStore.Infrastructure.Identity
 {
     public class StoreIdentityDbContext:IdentityDbContext<StoreUser>
     {

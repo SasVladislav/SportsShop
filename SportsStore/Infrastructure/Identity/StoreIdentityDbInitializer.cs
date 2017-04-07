@@ -2,7 +2,7 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 
-namespace SportsStore.Infrastructure
+namespace SportsStore.Infrastructure.Identity
 {
     public class StoreIdentityDbInitializer : CreateDatabaseIfNotExists<StoreIdentityDbContext>
     {
