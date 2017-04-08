@@ -27,6 +27,10 @@ namespace SportsStore
                 );
             config.Formatters.Remove(config.Formatters.XmlFormatter);
             config.DependencyResolver = new CustomResolver();
+
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter
+                .SerializerSettings.ReferenceLoopHandling =
+                Newtonsoft.Json.ReferenceLoopHandling.Ignore;
         }
     }
 }
